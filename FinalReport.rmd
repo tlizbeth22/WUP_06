@@ -55,6 +55,13 @@ This barchart shows that people that believe in the BIGBANG theory are less like
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+table1 <- xtabs(~BIGBANG + POSTLIFE, data=GSS)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The numerical summary shows that twice as many people that believe in the BIGBANG theory do not then believe in the POSTLIFE. 
 
 ## Inferential Results
 
